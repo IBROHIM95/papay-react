@@ -1,5 +1,6 @@
 import { Container, Stack, Box, Typography,Button } from '@mui/material';
 import React from 'react';
+import { RippleBadge } from './MaterialTheme/styled';
 
 
 
@@ -12,7 +13,13 @@ function App() {
          Create react App on redux
         </Typography>
       </Box>
-      <Button variant="contained">Contained</Button>
+      
+      <Box>
+        <RippleBadge badgeContent= {4} >
+          <Button variant="contained">Contained</Button>
+        </RippleBadge>
+        
+      </Box>
      </Stack>
    </Container>
   );
