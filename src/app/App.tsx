@@ -7,8 +7,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Users from './components/users';
-import Dishes from './components/Dishes';
+
+import { RestaurantPage } from './screens/RestaurantPage';
+import { CommunityPage } from './screens/CommunityPage';
+import { OrdersPage } from './screens/OrdersPage';
+import { MemberPage } from './screens/MemberPage';
+import { HelpPage } from './screens/HelpPage';
+import { LoginPage } from './screens/LoginPage';
+import { HomePage } from './screens/HomePage';
 
 
 function App() {
@@ -16,30 +22,54 @@ function App() {
     
    <Router>
       <div>
-        <ul>
+        <nav>
+          <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/restaurant">RestaurantPage</Link>
           </li>
           <li>
-            <Link to="/dishes">Dishes</Link>
+            <Link to="/community">CommunityPage</Link>
           </li>
           <li>
-            <Link to="/users">Users</Link>
+            <Link to="/orders">OrdersPage</Link>
+          </li>
+          <li>
+            <Link to="/member-page">MemberPage</Link>
+          </li>
+          <li>
+            <Link to="/help">HelpPage</Link>
+          </li>
+          <li>
+            <Link to="/login">LoginPage</Link>
+          </li>
+          <li>
+            <Link to="/">HomePage</Link>
           </li>
         </ul>
+        </nav>
+        
 
         <Switch>
-          <Route path="/dishes">
-            <Dishes/>
+          <Route path="/restaurant">
+            <RestaurantPage/>
           </Route>
-          <Route path="/users">
-            <Users/>
+          <Route path="/community">
+            <CommunityPage/>
+          </Route>
+          <Route path="/orders">
+            <OrdersPage/>
+          </Route>
+          <Route path="/member-page">
+            <MemberPage/>
+          </Route>
+          <Route path="/help">
+            <HelpPage/>
+          </Route>
+          <Route path="/login">
+            <LoginPage/>
           </Route>
           <Route path="/">
-            <Container>
-              <Home />
-            </Container>
-            
+              <HomePage />
           </Route>
         </Switch>
       </div>
@@ -51,9 +81,9 @@ function App() {
 
 export default App;
 
-function Home() {
-  return <h2>Home</h2>;
-}
+// function HomePage() {
+//   return <h2>HomePage</h2>;
+// }
 
 
 
