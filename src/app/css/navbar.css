@@ -2,7 +2,21 @@
     width: 100%;
     height: 773px;
     display: flex;
-    background: url('/public/restaurant/Rectangle\ 2.png');
+    background: url('/public/restaurant/Rectangle2.png');
+    background-size: cover;
+}
+.format_restaurant.home_navbar{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background: url('/public/restaurant/Rectangle3.png');
+    background-size: cover;
+}
+.format_others.home_navbar{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background: url('/public/restaurant/Rectangle4.png');
     background-size: cover;
 }
 
