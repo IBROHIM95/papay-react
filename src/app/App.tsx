@@ -5,9 +5,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  
 } from "react-router-dom";
 import '../app/css/navbar.css'
+import '../app/css/footer.css'
 import { RestaurantPage } from './screens/RestaurantPage';
 import { CommunityPage } from './screens/CommunityPage';
 import { OrdersPage } from './screens/OrdersPage';
@@ -18,6 +19,7 @@ import { HomePage } from './screens/HomePage';
 import { NavbarHome } from './components/header';
 import { NavbarRestaurant } from './components/header/restaurant';
 import { NavbarOthers } from './components/header/others';
+import { Footer } from './components/footer';
 
 
 function App() {
@@ -35,34 +37,6 @@ function App() {
             <NavbarRestaurant  setPath = {setPath} />
           )  : (<NavbarOthers setPath = {setPath} />
           )}     
-     
-
-        {/* <nav>
-          <ul>
-          <li>
-            <Link to="/restaurant">RestaurantPage</Link>
-          </li>
-          <li>
-            <Link to="/community">CommunityPage</Link>
-          </li>
-          <li>
-            <Link to="/orders">OrdersPage</Link>
-          </li>
-          <li>
-            <Link to="/member-page">MemberPage</Link>
-          </li>
-          <li>
-            <Link to="/help">HelpPage</Link>
-          </li>
-          <li>
-            <Link to="/login">LoginPage</Link>
-          </li>
-          <li>
-            <Link to="/">HomePage</Link>
-          </li>
-        </ul>
-        </nav> */}
-        
 
         <Switch>
           <Route path="/restaurant">
@@ -87,7 +61,7 @@ function App() {
               <HomePage />
           </Route>
         </Switch>
-     
+       <Footer/>
     </Router>
     
   
