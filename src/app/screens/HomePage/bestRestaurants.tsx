@@ -6,7 +6,7 @@ export function BestRestaurant() {
     return (
         <div className="top_restaurant_frame" >
             <Container   >
-                Top restaurant
+                best restaurant
             </Container>
         </div>
     )

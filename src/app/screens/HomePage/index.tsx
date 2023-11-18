@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+
 import React from 'react';
 import { BestDishes } from "./bestDishes";
 import { TopRestaurant } from "./topRestaurants";
@@ -11,17 +11,18 @@ import '../../css/home.css'
 
 export function HomePage() {
     return (
-        <div className="homepage" >
-         <Container>
+        <div className="homepage"  >
+        
          <Statistics/>  
-         <TopRestaurant/>  
-         <BestDishes/>
+         <TopRestaurant/> 
          <BestRestaurant/>
+         <BestDishes/>
+         
          
          <Events/>
          <Advertisement/>
          <Recommendations/>
-        </Container>
+       
         </div>
         
     )

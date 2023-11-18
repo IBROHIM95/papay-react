@@ -6,7 +6,7 @@ export function BestDishes() {
     return (
         <div className="top_restaurant_frame" >
             <Container   >
-                Top restaurant
+                dishes
             </Container>
         </div>
     )
