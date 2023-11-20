@@ -9,7 +9,7 @@ import { Card,
       IconButton, Link, 
       Typography,AspectRatio
      } from "@mui/joy";
-import { Box, Container, Stack } from "@mui/material";
+import { Box, Button, Container, Stack } from "@mui/material";
 import React from "react";
 
 
@@ -19,7 +19,7 @@ export function BestRestaurant() {
             <img src='/icons/Group.svg' alt="" 
             style={{position: 'absolute', left: '6%',  }}
             />
-            <Container sx={{mt:'153px'}}  >
+            <Container sx={{paddingTop:'153px'}}  >
                <Stack flexDirection={'column'} alignItems={'center'} >
                 <Box color={'#e3c08d'} > Zo'r Restaranlar </Box>
                 <Stack sx={{mt: '43px', flexDirection:'row'}} >
@@ -393,6 +393,15 @@ export function BestRestaurant() {
               </CardOverflow>
                </Card>
                </CssVarsProvider>
+               </Stack>
+               <Stack
+               flexDirection={'row'}
+               justifyContent={'flex-end'}
+               style={{width:'100%', marginTop:'16px'}}
+               >
+               <Button style={{background: '#1976d2', color:'#FFFF'}} >
+                Barchasini ko'rish
+               </Button  >
                </Stack>
                </Stack>
             </Container>
