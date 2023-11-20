@@ -17,10 +17,10 @@ export function HomePage() {
          <TopRestaurant/> 
          <BestRestaurant/>
          <BestDishes/>
-         
+         <Advertisement/>
          
          <Events/>
-         <Advertisement/>
+         
          <Recommendations/>
        
         </div>
