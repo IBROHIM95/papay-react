@@ -13,7 +13,8 @@ export function Statistics() {
                 alignItems={'center'}
                 style={{height: '236px'}}
                 >
-                <div className="personage_img left" ></div>
+                    <img className="personage_img left" src="/restaurant/papaysright.png" alt="" />
+                {/* <div className="personage_img left" ></div> */}
                 <Stack className="static_box" >
                     <Box className="static_num"  >12</Box>
                     <Box className="static_text" >Restaurants</Box>
@@ -33,7 +34,8 @@ export function Statistics() {
                     <Box className="static_num"  >200+</Box>
                     <Box className="static_text" >Foydalanuvchilar</Box>
                 </Stack>
-                <div className="personage_img right" ></div>
+                <img className="personage_img right" src="/restaurant/papaysright.png" alt="" />
+                {/* <div className="personage_img right" ></div> */}
               </Stack>
             </Container>
         </div>

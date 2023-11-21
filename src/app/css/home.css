@@ -10,14 +10,15 @@
 .homepage .personage_img.left{
     width: 204px;
     height: 200px;
-    background: url('/public/restaurant/papaysleft.png');
+    /* background: url('/public/restaurant/papaysleft.png'); */
     transform: matrix(1,0,0,1,0,0);
     background-size: cover;
 }
 .homepage .personage_img.right{
     width: 204px;
+    /* background: rgba(0, 0, 0, 0.656); */
     height: 200px;
-    background: url('/public/restaurant/papaysright.png');
+    /* background: url('/public/restaurant/papaysright.png'); */
     transform: matrix(1,0,0,1,0,0);
     background-size: cover;
 }
@@ -480,7 +481,7 @@
     width: 216px;
     height: 200px;
     transform: matrix(1, 0, 0, 1, 0, 0);
-    background: url("/public/home/papays.png");
+    /* background: url("/public/home/papays.png"); */
     background-size: cover;
   }
   
@@ -489,6 +490,6 @@
     width: 216px;
     height: 200px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    background: url("/public/home/papays.png");
+    /* background: url("/public/home/papays.png"); */
     background-size: cover;
   }
