@@ -16,7 +16,7 @@
 }
 .homepage .personage_img.right{
     width: 204px;
-    /* background: rgba(0, 0, 0, 0.656); */
+    
     height: 200px;
     /* background: url('/public/restaurant/papaysright.png'); */
     transform: matrix(1,0,0,1,0,0);
