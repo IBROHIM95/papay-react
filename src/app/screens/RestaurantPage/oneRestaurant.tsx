@@ -52,29 +52,6 @@ export function OneRestaurant() {
              sx={{fontSize: 40, cursor:'pointer'}} 
              style={{color : 'white'}} />
           </Box>
-          {/* <Swiper
-          className='restaurant_avatars_wrapper'
-          slidesPerView={7}
-          centeredSlides= {false}
-          spaceBetween={30}
-          navigation= {{
-            nextEl: 'restaurant_next',
-            prevEl: 'restaurant_prev',
-          }}>
-            {restaurant_list.map((ele, order) => {
-              return(
-                <SwiperSlide
-                style={{cursor:'pointer'}}
-                key={order}
-                className='restaurant_avatars'>
-
-                 <img src="/restaurant/Monitor.jpg" alt="" />
-                 <span>Burak</span>
-                </SwiperSlide>
-              )
-            } )}
-          </Swiper> */}
-
            <Swiper
               className={"restaurant_avatars_wrapper"}
               slidesPerView={5}
