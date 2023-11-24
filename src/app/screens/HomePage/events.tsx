@@ -55,7 +55,7 @@ export function Events() {
                 className={"swiper-button-prev"}
                 style={{ transform: "rotate(-180deg)" }} alt=""
               />
-              <div className={"dot_frame_pagination swiper-pagination"}></div>
+              <div style={{marginLeft: '80px'}} className={"dot_frame_pagination swiper-pagination"}></div>
               <img
                 src={"/icons/Arrow.svg"}
                 className={"swiper-button-next"} alt=""

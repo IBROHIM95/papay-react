@@ -221,11 +221,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 250px;
+    width: 200px;
     height: 24px;
-    margin-left: 901px;
+    margin-left: 801px;
     margin-top: 19px;
   }
+  
   
   .homepage .dot_frame_pagination {
     position: relative;
