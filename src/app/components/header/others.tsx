@@ -42,6 +42,11 @@ export function NavbarOthers(props:any) {
                   Yordam
                 </NavLink>
             </Box>
+            <Box className = 'hover-line' onClick = {props.setPath}  >
+                <NavLink to='/member-page' activeClassName='underline' >
+                   Saxifam
+                </NavLink>
+            </Box>
             <Box className = 'hover-line'   >
                <IconButton
                aria-label = 'cart'
