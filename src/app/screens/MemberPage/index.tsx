@@ -2,7 +2,7 @@ import {  } from "@mui/material";
 import React from 'react';
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 import VisitOtherPage from "./visitotherpage";
-import VisitMyPage from "./visitmypage";
+import {VisitMyPage} from "./visitmypage";
 import '../../../app/css/my_page.css'
 
 export function MemberPage() {

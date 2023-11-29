@@ -1,16 +1,16 @@
 import { TabContext, TabPanel,TabList } from '@mui/lab'
 import { Box, Button, Container, Pagination, PaginationItem, Stack, Tab } from '@mui/material'
-import React,{useState} from 'react'
+import React,{} from 'react'
 import { MemberPosts } from './memberPosts'
-import { ArrowBack, ArrowBackIos, ArrowForwardIos, FacebookOutlined, Instagram, SettingsOutlined, Telegram, YouTube } from '@mui/icons-material'
+import {  ArrowBackIos, ArrowForwardIos, FacebookOutlined, Instagram, SettingsOutlined, Telegram, YouTube } from '@mui/icons-material'
 import { MemberFollowers } from './memberFollowers'
 import { MemberFollowing } from './memberFollowing'
 import { MySettings } from './mysettings'
 
 
 
-export default function VisitMyPage(props:any) {
-    const [value,setValue] =React.useState('1')
+export   function VisitMyPage(props:any) {
+    const [value, setValue] =React.useState('1')
 
     const handleChange = (event:any, newValue: string)=>{
         setValue(newValue)
@@ -53,27 +53,28 @@ export default function VisitMyPage(props:any) {
                       </TabPanel>
                       <TabPanel value='2' >
                         <Box className= 'menu_name' >Followers</Box>
-                        <Box className= 'menu_contact' >
-                            <MemberFollowers action_enabled={true} />
+                        <Box className= 'menu_content' >
+                            <MemberFollowers actions_enabled={true} />
                         </Box>
                       </TabPanel>
 
                       <TabPanel value='3' >
-                        <Box className= 'menu_name' >Following</Box>
-                        <Box className= 'menu_contact' >
-                            <MemberFollowing action_enabled={true} />
+                        <Box className= 'menu_name' ></Box>
+                        <Box className= 'menu_content' >
+                        
+                            <MemberFollowing actions_enabled={true} />
                         </Box>
                       </TabPanel>
 
                       <TabPanel value='4' >
                         <Box className= 'menu_name' >maqola yozish</Box>
-                        <Box className= 'menu_contact' >
+                        <Box className= 'write_content' >
                         </Box>
                       </TabPanel>
 
                       <TabPanel value='5' >
                         <Box className= 'menu_name' >Tanlangan maqola</Box>
-                        <Box className= 'menu_contact' >
+                        <Box className= 'menu_content' >
                         </Box>
                       </TabPanel>
                       <TabPanel value='6' >
@@ -155,35 +156,35 @@ export default function VisitMyPage(props:any) {
                   onChange={handleChange}
                   aria-label="lab API tabs example"
                 >
-                  <Tab
+                  <Tab label='Maqolalarim'className='menu_box'
                     style={{ flexDirection: "column" }}
                     value={"1"}
-                    component={() => (
-                      <div className={`menu_box ${value}`}>
-                        <img src="/icons/pencil.svg" alt="" />
-                        <span>Maqolalarim</span>
-                      </div>
-                    )}
+                    // component={() => (
+                    //   <div className={`menu_box ${value}`}>
+                    //     <img src="/icons/pencil.svg" alt="" />
+                    //     <span>Maqolalarim</span>
+                    //   </div>
+                    // )}
                   />
-                  <Tab
+                  <Tab label='Follower'className='menu_box'
                     style={{ flexDirection: "column" }}
                     value={"2"}
-                    component={() => (
-                        <div className={`menu_box ${value}`}>
-                            <img src="/icons/group.svg" alt="" />
-                            <span>Follower</span>
-                        </div>
-                    )}
+                    // component={() => (
+                    //     <div className={`menu_box ${value}`}>
+                    //         <img src="/icons/group.svg" alt="" />
+                    //         <span>Follower</span>
+                    //     </div>
+                    // )}
                   />
-                   <Tab
+                   <Tab label='following' className='menu_box'
                     style={{ flexDirection: "column" }}
-                    value={"6"}
-                    component={() => (
-                        <div className={`menu_box ${value}`}>
-                            {/* <img src="/icons/user.svg" alt="" /> */}
-                            <span>Following</span>
-                        </div>
-                    )}
+                    value={"3"}
+                    // component={() => (
+                    //     <div className={`menu_box ${value}`}>
+                    //         {/* <img src="/icons/user.svg" alt="" /> */}
+                    //         Following
+                    //     </div>
+                    // )}
                   />
                 </TabList>
               </Box>

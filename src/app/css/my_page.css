@@ -166,6 +166,7 @@
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15),
       inset 3px 2px 9px rgba(255, 255, 255, 0.25);
     border-radius: 17px;
+    cursor: pointer;
   }
   
   .my_page .follow_box .username_text {
@@ -398,6 +399,9 @@
     padding: 0px 20px;
     width: 98%;
     height: 50px;
+    color: #0e0f0f;
+    font-style: normal;
+    font-family: 'Poppins';
     display: flex;
     flex-direction: row;
     align-items: center;
