@@ -6,11 +6,13 @@ import {  ArrowBackIos, ArrowForwardIos, FacebookOutlined, Instagram, SettingsOu
 import { MemberFollowers } from './memberFollowers'
 import { MemberFollowing } from './memberFollowing'
 import { MySettings } from './mysettings'
+import { TuiEditor } from '../../components/tuieditor/TuiEditor'
+import TVviewer from '../../components/tuieditor/TVviewer'
 
 
 
 export   function VisitMyPage(props:any) {
-    const [value, setValue] =React.useState('1')
+    const [value, setValue] =React.useState('5')
 
     const handleChange = (event:any, newValue: string)=>{
         setValue(newValue)
@@ -69,12 +71,14 @@ export   function VisitMyPage(props:any) {
                       <TabPanel value='4' >
                         <Box className= 'menu_name' >maqola yozish</Box>
                         <Box className= 'write_content' >
+                          <TuiEditor/>
                         </Box>
                       </TabPanel>
 
                       <TabPanel value='5' >
                         <Box className= 'menu_name' >Tanlangan maqola</Box>
                         <Box className= 'menu_content' >
+                          <TVviewer text= {`<h3>Hello</h3>`} />
                         </Box>
                       </TabPanel>
                       <TabPanel value='6' >

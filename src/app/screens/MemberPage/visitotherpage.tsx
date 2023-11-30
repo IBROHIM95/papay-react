@@ -6,6 +6,7 @@ import {  ArrowBackIos, ArrowForwardIos, FacebookOutlined, Instagram, SettingsOu
 import { MemberFollowers } from './memberFollowers'
 import { MemberFollowing } from './memberFollowing'
 import { MySettings } from './mysettings'
+import TVviewer from '../../components/tuieditor/TVviewer'
 
 
 
@@ -71,6 +72,7 @@ export default  function VisitOtherPage(props:any) {
                       <TabPanel value='4' >
                         <Box className= 'menu_name' >Tanlangan maqola</Box>
                         <Box className= 'menu_content' >
+                        <TVviewer text= {`<h3>Hello</h3>`} />
                         </Box>
                       </TabPanel>
                       {/* <TabPanel value='6' >
