@@ -14,9 +14,9 @@ const TVviewer = (props:any) => {
         <Stack  sx={{background: 'white', mt: '30px', borderRadius:'10px'}} >
           <Box sx={{m: '40px'}} >
             <Viewer 
-            ref={editorRef}
+            // ref={editorRef}
             initialValue={props.text}
-            height={'600px'} />
+             />
           </Box>
         </Stack>
     )

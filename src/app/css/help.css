@@ -1,0 +1,66 @@
+.help_page{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    background: #0b0e11;
+}
+
+.help_page .help_main_content{
+    width: 100%;
+    background:white;
+    border-radius: 10px;
+
+}
+.help_page .accordian_menu{
+    background: #0b0e11;
+}
+
+.help_page .admin_letter_container{
+    position: relative;
+    width: 100%;
+    
+    font-weight: 600;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.help_page .admin_letter_frame{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    font-family: 'Poppins';
+   
+    
+
+}
+
+.help_page .admin_input_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.help_page .admin_input_box input{
+    border-radius: 10px;
+}
+
+.help_page .admin_input_box textarea{
+    border-radius: 10px;
+}
+
+.help_page .admin_button{
+    position: relative;
+    width: 90%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 10px;
+}

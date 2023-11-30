@@ -52,7 +52,7 @@ export const TuiEditor = (props: any) => {
         </Stack>
 
         <Editor
-          ref={editorRef}
+          // ref={editorRef}
           placeholder='Type here'
           previewStyle="vertical"
           height="640px"
